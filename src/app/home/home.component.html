@@ -1,0 +1,78 @@
+<ng-container *ngIf="shortExperienceContent">
+  <h2>About Me</h2>
+  <markdown [data]="shortExperienceContent.aboutMe"></markdown>
+  <div class="home-tab-area">
+    <mat-tab-group [color]="'themed'">
+      <mat-tab label="Work Experience">
+        <div class="home-tab-area-section">
+          <mat-card class="section-card" (click)="selectedExperience()">
+            <markdown [data]="shortExperienceContent.experienceShortAug19TillDate"></markdown>
+          </mat-card>
+          <mat-card class="section-card" (click)="selectedExperience()">
+            <markdown [data]="shortExperienceContent.experienceShortSep16Aug19"></markdown>
+          </mat-card>
+          <mat-card class="section-card">
+            <markdown [data]="shortExperienceContent.experienceShortMar15Aug16"></markdown>
+          </mat-card>
+          <mat-card class="section-card">
+            <markdown [data]="shortExperienceContent.experienceShortAug14Mar15"></markdown>
+          </mat-card>
+
+          <mat-card class="section-card" (click)="selectedExperience()">
+            <markdown [data]="shortExperienceContent.experienceShortJan14Jul14"></markdown>
+          </mat-card>
+          <mat-card class="section-card">
+            <markdown [data]="shortExperienceContent.experienceShortJan13Dec13"></markdown>
+          </mat-card>
+          <mat-card class="section-card">
+            <markdown [data]="shortExperienceContent.experienceShortJun12Dec12"></markdown>
+          </mat-card>
+          <mat-card class="section-card">
+            <markdown [data]="shortExperienceContent.experienceShortDec11Jun12"></markdown>
+          </mat-card>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Technical Skills">
+        <div class="home-tab-area-section">
+          <mat-card class="section-card" (click)="selectedExperience()">
+            <mat-card-header>
+              <mat-card-title>Shiba Inu</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p>{{ longText }}</p>
+              <p>This card has divider and indeterminate progress as footer</p>
+            </mat-card-content>
+          </mat-card>
+          <mat-card class="section-card">
+            <mat-card-header>
+              <mat-card-title>Shiba Inu</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p>{{ longText }}</p>
+              <p>This card has divider and indeterminate progress as footer</p>
+            </mat-card-content>
+          </mat-card>
+          <mat-card class="section-card">
+            <mat-card-header>
+              <mat-card-title>Shiba Inu</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p>{{ longText }}</p>
+              <p>This card has divider and indeterminate progress as footer</p>
+            </mat-card-content>
+          </mat-card>
+          <mat-card class="section-card">
+            <mat-card-header>
+              <mat-card-title>Shiba Inu</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p>{{ longText }}</p>
+              <p>This card has divider and indeterminate progress as footer</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</ng-container>

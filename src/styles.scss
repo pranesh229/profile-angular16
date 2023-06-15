@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+// @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+@import "colors";
+html,
+body {
+  height: 100%;
+}
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+
+body.dark {
+  @include darken();
+}
+body.light {
+  @include lighten();
+}
+body {
+  margin: 0;
+  // font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: $nunito-font;
+  font-size: 14px;
+  color: var(--secondaryThemeColor);
+  background-color: var(--bgColor);
+  padding: 24px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 576px;
+  margin: 0 auto;
+
+  .mdc-button.mat-themed,
+  .mat-mdc-stroked-button.mat-themed {
+    color: $themed-button-color;
+  }
+  .mat-mdc-unelevated-button.mat-themed:hover,
+  .mat-mdc-raised-button.mat-themed:hover {
+    color: $themed-font-color;
+    background-color: $themed-button-hover-color;
+  }
+
+  .mat-mdc-unelevated-button:not(:disabled, :hover).mat-themed,
+  .mat-mdc-raised-button.mat-themed,
+  .mat-mdc-fab.mat-themed,
+  .mat-mdc-mini-fab.mat-themed {
+    color: $themed-font-color;
+    background-color: $themed-button-color;
+  }
+  .mat-mdc-icon-button.mat-themed {
+    color: $themed-button-color;
+  }
+
+  .mdc-button.mat-secondary-themed,
+  .mat-mdc-stroked-button.mat-secondary-themed {
+    color: $themed-secondary-button-color;
+  }
+  .mat-mdc-unelevated-button.mat-secondary-themed:hover,
+  .mat-mdc-button.mat-secondary-themed:hover {
+    color: var(--secondaryThemeColor);
+    background-color: var(--secondaryThemeHoverColor);
+  }
+
+  .mat-mdc-unelevated-button:not(:disabled, :hover).mat-secondary-themed,
+  .mat-mdc-button.mat-secondary-themed,
+  .mat-mdc-fab.mat-secondary-themed,
+  .mat-mdc-mini-fab.mat-secondary-themed {
+    color: var(--secondaryThemeColor);
+  }
+  .mat-mdc-icon-button.mat-secondary-themed {
+    color: $themed-secondary-button-color;
+  }
+  .mat-mdc-tab-group.mat-themed {
+    .mat-mdc-tab .mdc-tab-indicator__content--underline {
+      border-color: var(--secondaryThemeColor);
+    }
+    .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+      color: var(--secondaryThemeColor);
+      opacity: 1;
+    }
+    .mat-mdc-tab .mdc-tab__text-label {
+      color: var(--secondaryThemeColor);
+      opacity: 0.6;
+    }
+  }
+}

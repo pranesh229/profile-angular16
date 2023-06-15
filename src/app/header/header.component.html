@@ -1,0 +1,22 @@
+<div class="header-area">
+  <button mat-raised-button color="themed">
+    Reach<br />
+    Out
+  </button>
+  <button mat-button color="secondary-themed">
+    <span class="emoji-technologist">🧑‍💻</span>Pranesh
+    <span class="emoji-coffee">☕</span>
+  </button>
+  <mat-icon
+    class="dark-mode"
+    *ngIf="currentMode === 'light'"
+    (click)="toggleTheme()"
+    >dark_mode</mat-icon
+  >
+  <mat-icon
+    class="light-mode"
+    *ngIf="currentMode === 'dark'"
+    (click)="toggleTheme()"
+    >light_mode</mat-icon
+  >
+</div>

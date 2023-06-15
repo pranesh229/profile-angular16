@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+$background-color-light: #e6e6e6;
+$background-color-dark: #222222;
+$background-color-area-light: #fff;
+$background-color-area-dark: #303030;;
+$nunito-font: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$themed-button-color: #ea5234;
+$themed-button-hover-color: #d03516;
+$themed-font-color: #f0fff3;
+$themed-secondary-button-color: #fff;
+$themed-secondary-button-hover-color: rgba(51, 60, 77, 0.2);
+$themed-secondary-font-color: #333c4d;
+
+@mixin lighten() {
+  --bgColor: #{$background-color-light};
+  --bgColorArea:  #{$background-color-area-light};
+  --themeColor: #{$themed-font-color};
+  --themeHoverColor: #{$themed-button-hover-color};
+  --secondaryThemeColor: #{$themed-secondary-font-color};
+  --secondaryThemeHoverColor: #{$themed-secondary-button-hover-color};
+}
+
+// mixin that enables css variables in dark mode
+@mixin darken() {
+  --bgColor: #{$background-color-dark};
+  --bgColorArea:  #{$background-color-area-dark};
+  --themeColor: #{$themed-secondary-font-color};
+  --themeHoverColor: #{$themed-secondary-button-hover-color};
+  --secondaryThemeColor: #{$themed-font-color};
+  --secondaryThemeHoverColor: #{$themed-button-hover-color};
+}

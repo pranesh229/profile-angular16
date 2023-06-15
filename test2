@@ -1,0 +1,66 @@
+appearance none
+background-attachment scroll
+background-clip border-box
+background-color rgba(0, 0, 0, 0)
+background-image none
+background-origin padding-box
+background-position-x 0%
+background-position-y 0%
+background-repeat-x repeat
+background-repeat-y repeat
+background-size auto
+border-bottom-color rgb(51, 60, 77)
+border-bottom-style none
+border-bottom-width 0px
+border-image-outset 0
+border-image-repeat stretch
+border-image-slice 100%
+border-image-source none
+border-image-width 1
+border-left-color rgb(51, 60, 77)
+border-left-style none
+border-left-width 0px
+border-right-color rgb(51, 60, 77)
+border-right-style none
+border-right-width 0px
+border-top-color rgb(51, 60, 77)
+border-top-style none
+border-top-width 0px
+box-sizing border-box
+color rgb(51, 60, 77)
+cursor pointer
+display flex
+flex-basis auto
+flex-grow 1
+flex-shrink 0
+font-family Roboto, sans-serif
+font-size 14px
+font-weight 500
+height 48px
+justify-content center
+letter-spacing 1.25px
+line-height 36px
+margin-bottom 0px
+margin-left 0px
+margin-right 0px
+margin-top 0px
+min-width 90px
+outline-color rgb(51, 60, 77)
+outline-style none
+outline-width 0px
+padding-bottom 0px
+padding-left 24px
+padding-right 24px
+padding-top 0px
+position relative
+text-align center
+text-decoration-color rgb(51, 60, 77)
+text-decoration-line none
+text-decoration-style solid
+text-decoration-thickness auto
+text-wrap nowrap
+white-space-collapse collapse
+width 274.922px
+z-index 1
+-webkit-font-smoothing antialiased
+-webkit-tap-highlight-color rgba(0, 0, 0, 0)
