@@ -23,12 +23,10 @@ export class HomeComponent implements OnInit {
   shortExperienceContent: any;
   ngOnInit(): void {
     this.appService.getShortExperienceContent().subscribe((result) => {
-      console.log(result);
       this.shortExperienceContent = result;
     })
   }
-  selectedExperience(): void {
-    console.log('selected Experience');
-    this.router.navigateByUrl('experience');
+  selectedExperience(experienceId: string): void {
+    this.router.navigateByUrl(`experience/${experienceId}`);
   }
 }

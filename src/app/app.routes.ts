@@ -7,6 +7,6 @@ export const routes: Routes = [{
   component: HomeComponent
 },
 {
-  path: 'experience',
+  path: 'experience/:experienceId',
   component: ExperienceComponent
 }];

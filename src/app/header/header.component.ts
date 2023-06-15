@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from "@angular/material/icon";
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -12,6 +13,7 @@ import { MatIconModule } from "@angular/material/icon";
 export class HeaderComponent {
   currentMode = 'light';
   document = inject(DOCUMENT);
+  router = inject(Router);
   ngOnInit(): void {
     this.document.body.classList.toggle('light');
     // this.document.body.classList.toggle(Mode.DARK);
@@ -27,5 +29,8 @@ export class HeaderComponent {
 
     }
 
+  }
+  goHome(): void {
+    this.router.navigateByUrl('/');
   }
 }

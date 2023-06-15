@@ -1,4 +1,4 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig, SecurityContext, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -7,5 +7,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { provideHttpClient } from '@angular/common/http';
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), provideAnimations(), provideHttpClient(),
-  importProvidersFrom(MarkdownModule.forRoot())]
+  importProvidersFrom(MarkdownModule.forRoot({
+    sanitize: SecurityContext.NONE
+  }))]
 };

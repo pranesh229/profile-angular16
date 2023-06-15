@@ -9,6 +9,7 @@
     >BACK
   </button>
   <mat-card class="experience-card">
+    <mat-spinner *ngIf="!markdown"></mat-spinner>
     <markdown [data]="markdown"></markdown>
   </mat-card>
 </div>

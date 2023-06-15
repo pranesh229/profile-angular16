@@ -5,72 +5,82 @@
     <mat-tab-group [color]="'themed'">
       <mat-tab label="Work Experience">
         <div class="home-tab-area-section">
-          <mat-card class="section-card" (click)="selectedExperience()">
-            <markdown [data]="shortExperienceContent.experienceShortAug19TillDate"></markdown>
+          <mat-card
+            class="section-card"
+            (click)="selectedExperience('experienceShortAug19TillDate')"
+          >
+            <markdown
+              [data]="shortExperienceContent.experienceShortAug19TillDate"
+            ></markdown>
           </mat-card>
-          <mat-card class="section-card" (click)="selectedExperience()">
-            <markdown [data]="shortExperienceContent.experienceShortSep16Aug19"></markdown>
+          <mat-card
+            class="section-card"
+            (click)="selectedExperience('experienceShortSep16Aug19')"
+          >
+            <markdown
+              [data]="shortExperienceContent.experienceShortSep16Aug19"
+            ></markdown>
           </mat-card>
-          <mat-card class="section-card">
-            <markdown [data]="shortExperienceContent.experienceShortMar15Aug16"></markdown>
+          <mat-card
+            class="section-card"
+            (click)="selectedExperience('experienceShortMar15Aug16')"
+          >
+            <markdown
+              [data]="shortExperienceContent.experienceShortMar15Aug16"
+            ></markdown>
           </mat-card>
-          <mat-card class="section-card">
-            <markdown [data]="shortExperienceContent.experienceShortAug14Mar15"></markdown>
+          <mat-card
+            class="section-card"
+            (click)="selectedExperience('experienceShortAug14Mar15')"
+          >
+            <markdown
+              [data]="shortExperienceContent.experienceShortAug14Mar15"
+            ></markdown>
           </mat-card>
 
-          <mat-card class="section-card" (click)="selectedExperience()">
-            <markdown [data]="shortExperienceContent.experienceShortJan14Jul14"></markdown>
+          <mat-card
+            class="section-card"
+            (click)="selectedExperience('experienceShortJan14Jul14')"
+          >
+            <markdown
+              [data]="shortExperienceContent.experienceShortJan14Jul14"
+            ></markdown>
           </mat-card>
-          <mat-card class="section-card">
-            <markdown [data]="shortExperienceContent.experienceShortJan13Dec13"></markdown>
+          <mat-card
+            class="section-card"
+            (click)="selectedExperience('experienceShortJan13Dec13')"
+          >
+            <markdown
+              [data]="shortExperienceContent.experienceShortJan13Dec13"
+            ></markdown>
           </mat-card>
-          <mat-card class="section-card">
-            <markdown [data]="shortExperienceContent.experienceShortJun12Dec12"></markdown>
+          <mat-card
+            class="section-card"
+            (click)="selectedExperience('experienceShortJun12Dec12')"
+          >
+            <markdown
+              [data]="shortExperienceContent.experienceShortJun12Dec12"
+            ></markdown>
           </mat-card>
-          <mat-card class="section-card">
-            <markdown [data]="shortExperienceContent.experienceShortDec11Jun12"></markdown>
+          <mat-card
+            class="section-card"
+            (click)="selectedExperience('experienceShortDec11Jun12')"
+          >
+            <markdown
+              [data]="shortExperienceContent.experienceShortDec11Jun12"
+            ></markdown>
           </mat-card>
         </div>
       </mat-tab>
 
       <mat-tab label="Technical Skills">
         <div class="home-tab-area-section">
-          <mat-card class="section-card" (click)="selectedExperience()">
-            <mat-card-header>
-              <mat-card-title>Shiba Inu</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-              <p>{{ longText }}</p>
-              <p>This card has divider and indeterminate progress as footer</p>
-            </mat-card-content>
-          </mat-card>
           <mat-card class="section-card">
             <mat-card-header>
-              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-title>Under Construction</mat-card-title>
             </mat-card-header>
-            <mat-card-content>
-              <p>{{ longText }}</p>
-              <p>This card has divider and indeterminate progress as footer</p>
-            </mat-card-content>
           </mat-card>
-          <mat-card class="section-card">
-            <mat-card-header>
-              <mat-card-title>Shiba Inu</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-              <p>{{ longText }}</p>
-              <p>This card has divider and indeterminate progress as footer</p>
-            </mat-card-content>
-          </mat-card>
-          <mat-card class="section-card">
-            <mat-card-header>
-              <mat-card-title>Shiba Inu</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-              <p>{{ longText }}</p>
-              <p>This card has divider and indeterminate progress as footer</p>
-            </mat-card-content>
-          </mat-card>
+
         </div>
       </mat-tab>
     </mat-tab-group>
