@@ -1,0 +1,23 @@
+<div class="reachout-area">
+  <button mat-button color="secondary-themed" (click)="goBack()">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="arrow_back_ios"
+      class="back-icon"
+    ></mat-icon
+    >BACK
+  </button>
+  <mat-card class="reachout-card">
+    <form
+      action="https://mailthis.to/pranesh229@gmail.com"
+      method="POST"
+      encType="multipart/form-data"
+    >
+      <input type="text" name="name" placeholder="Your name" />
+      <input type="email" name="_replyto" placeholder="Your email" />
+      <textarea name="message" placeholder="Enter your message here"></textarea>
+      <input type="submit" value="Send Email" />
+    </form>
+  </mat-card>
+</div>

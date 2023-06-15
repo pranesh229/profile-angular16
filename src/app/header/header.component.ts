@@ -33,4 +33,7 @@ export class HeaderComponent {
   goHome(): void {
     this.router.navigateByUrl('/');
   }
+  goReachOut(): void {
+    this.router.navigateByUrl('/reach-out');
+  }
 }
