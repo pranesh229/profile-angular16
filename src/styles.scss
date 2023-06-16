@@ -12,7 +12,6 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-
 body.dark {
   @include darken();
 }
@@ -30,7 +29,7 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 576px;
+  width: 100%;
   margin: 0 auto;
 
   .mdc-button.mat-themed,
@@ -85,5 +84,10 @@ body {
       color: var(--secondaryThemeColor);
       opacity: 0.6;
     }
+  }
+}
+@media screen and (min-width: 576px) {
+  body {
+    width: 576px;
   }
 }
