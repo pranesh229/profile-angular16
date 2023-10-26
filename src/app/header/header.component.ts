@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from "@angular/material/icon";
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  currentMode = 'light';
+  currentMode = signal('light');
   document = inject(DOCUMENT);
   router = inject(Router);
   ngOnInit(): void {
@@ -22,12 +22,15 @@ export class HeaderComponent {
   toggleTheme() {
     this.document.body.classList.toggle('dark');
     this.document.body.classList.toggle('light');
-    if (this.currentMode === 'light') {
-      this.currentMode = 'dark';
-    } else {
-      this.currentMode = 'light';
+    this.currentMode.update(mode => {
+      if (mode === 'light') {
+        mode = 'dark';
+      } else {
+        mode = 'light';
+      }
+      return mode;
+    });
 
-    }
 
   }
   goHome(): void {

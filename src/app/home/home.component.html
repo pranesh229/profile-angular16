@@ -1,6 +1,6 @@
-<ng-container *ngIf="shortExperienceContent">
+<ng-container *ngIf="shortExperienceContent()">
   <h2>About Me</h2>
-  <markdown [data]="shortExperienceContent.aboutMe"></markdown>
+  <markdown [data]="shortExperienceContent()?.aboutMe"></markdown>
   <div class="home-tab-area">
     <mat-tab-group [color]="'themed'">
       <mat-tab label="Work Experience">
@@ -10,7 +10,7 @@
             (click)="selectedExperience('experienceShortAug19TillDate')"
           >
             <markdown
-              [data]="shortExperienceContent.experienceShortAug19TillDate"
+              [data]="shortExperienceContent()?.experienceShortAug19TillDate"
             ></markdown>
           </mat-card>
           <mat-card
@@ -18,7 +18,7 @@
             (click)="selectedExperience('experienceShortSep16Aug19')"
           >
             <markdown
-              [data]="shortExperienceContent.experienceShortSep16Aug19"
+              [data]="shortExperienceContent()?.experienceShortSep16Aug19"
             ></markdown>
           </mat-card>
           <mat-card
@@ -26,7 +26,7 @@
             (click)="selectedExperience('experienceShortMar15Aug16')"
           >
             <markdown
-              [data]="shortExperienceContent.experienceShortMar15Aug16"
+              [data]="shortExperienceContent()?.experienceShortMar15Aug16"
             ></markdown>
           </mat-card>
           <mat-card
@@ -34,7 +34,7 @@
             (click)="selectedExperience('experienceShortAug14Mar15')"
           >
             <markdown
-              [data]="shortExperienceContent.experienceShortAug14Mar15"
+              [data]="shortExperienceContent()?.experienceShortAug14Mar15"
             ></markdown>
           </mat-card>
 
@@ -43,7 +43,7 @@
             (click)="selectedExperience('experienceShortJan14Jul14')"
           >
             <markdown
-              [data]="shortExperienceContent.experienceShortJan14Jul14"
+              [data]="shortExperienceContent()?.experienceShortJan14Jul14"
             ></markdown>
           </mat-card>
           <mat-card
@@ -51,7 +51,7 @@
             (click)="selectedExperience('experienceShortJan13Dec13')"
           >
             <markdown
-              [data]="shortExperienceContent.experienceShortJan13Dec13"
+              [data]="shortExperienceContent()?.experienceShortJan13Dec13"
             ></markdown>
           </mat-card>
           <mat-card
@@ -59,7 +59,7 @@
             (click)="selectedExperience('experienceShortJun12Dec12')"
           >
             <markdown
-              [data]="shortExperienceContent.experienceShortJun12Dec12"
+              [data]="shortExperienceContent()?.experienceShortJun12Dec12"
             ></markdown>
           </mat-card>
           <mat-card
@@ -67,7 +67,7 @@
             (click)="selectedExperience('experienceShortDec11Jun12')"
           >
             <markdown
-              [data]="shortExperienceContent.experienceShortDec11Jun12"
+              [data]="shortExperienceContent()?.experienceShortDec11Jun12"
             ></markdown>
           </mat-card>
         </div>
@@ -80,7 +80,6 @@
               <mat-card-title>Under Construction</mat-card-title>
             </mat-card-header>
           </mat-card>
-
         </div>
       </mat-tab>
     </mat-tab-group>

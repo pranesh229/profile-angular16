@@ -9,13 +9,13 @@
   </button>
   <mat-icon
     class="dark-mode"
-    *ngIf="currentMode === 'light'"
+    *ngIf="currentMode() === 'light'"
     (click)="toggleTheme()"
     >dark_mode</mat-icon
   >
   <mat-icon
     class="light-mode"
-    *ngIf="currentMode === 'dark'"
+    *ngIf="currentMode() === 'dark'"
     (click)="toggleTheme()"
     >light_mode</mat-icon
   >
